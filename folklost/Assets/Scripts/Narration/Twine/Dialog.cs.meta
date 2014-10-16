@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 4e3e4bd3b0ced464fb54954493d7e686
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - m_rolloverSound: {fileID: 8300000, guid: 61971658b4394d84ebd64f174ff31837, type: 3}
+  - m_selectSound: {fileID: 8300000, guid: 01cb857e8000e794c8a5f43fd813d63e, type: 3}
+  - m_twee: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
