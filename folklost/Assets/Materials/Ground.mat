@@ -22,7 +22,21 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ToonShade
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -30,13 +44,45 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Reflection
+        second: 1
+      data:
+        first:
+          name: _Shininess
+        second: 3.00000072
+      data:
+        first:
           name: _Outline
         second: .00499999989
+      data:
+        first:
+          name: _Gloss
+        second: .535714269
+      data:
+        first:
+          name: _FrezPow
+        second: .25
+      data:
+        first:
+          name: _FrezFalloff
+        second: 4
+      data:
+        first:
+          name: _EdgeAlpha
+        second: 0
+      data:
+        first:
+          name: _Metalics
+        second: .5
     m_Colors:
       data:
         first:
           name: _Color
         second: {r: .619607866, g: .454507709, b: .277001143, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _OutlineColor
