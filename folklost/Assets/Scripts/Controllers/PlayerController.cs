@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// The speed at which the player can move
 	/// </summary>
-	private float m_speed = 4.0f;
+	private float m_speed = 10.0f;
 	public float Speed {
 		get { return RenPy.Static.Run ? 14.0f : m_speed; }
 	}
