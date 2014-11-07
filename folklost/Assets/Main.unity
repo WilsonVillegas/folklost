@@ -426,7 +426,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1107417454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d1349fec44033249bd1cfb0d79b8074, type: 3}
   m_Name: 
@@ -1391,7 +1391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &2139832487
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1419,9 +1419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemName: Box
-  m_variableName: 
+  m_variableName: day_one_finish
   m_outlineMaterial: {fileID: 0}
-  m_destroyOnPickup: 0
+  m_destroyOnPickup: 1
   m_pickupSound: {fileID: 8300000, guid: 2e0e7ef9356509246aa1b88512240db5, type: 3}
 --- !u!114 &2139832489
 MonoBehaviour:
@@ -1482,7 +1482,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139832486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.31141663, y: 1.38013482, z: -8.07136345}
+  m_LocalPosition: {x: 10.9249115, y: 1.38013482, z: -8.07136345}
   m_LocalScale: {x: .635865986, y: .69887507, z: .704141915}
   m_Children:
   - {fileID: 1587914052}

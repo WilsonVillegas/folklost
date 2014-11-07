@@ -9,11 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cb16b2f2d9692b46b4c329850ce3c61, type: 3}
-  m_Name: 
+  m_Name: script-Resources
   m_EditorClassIdentifier: 
   Title: Resources
   Lines:
   - 'label start:'
+  - '    jump startgame'
+  - 
+  - 'label startgame:'
+  - '    if talked_papa: '
+  - '        jump checkStatus'
+  - 
   - '    $ talked_papa = False'
   - '    $ day_one_start = False'
   - '    $ day_two_start = False'
@@ -21,11 +27,6 @@ MonoBehaviour:
   - '    $ day_one_finish = False'
   - '    $ day_two_finish = False'
   - '    $ day_three_finish = False'
-  - '    jump startgame'
-  - 
-  - 'label startgame:'
-  - '    if talked_papa: '
-  - '        jump checkStatus'
   - '    $ talked_papa = True'
   - '    #play sound "angusgrunt"'
   - '    #$ checkvariable = False'

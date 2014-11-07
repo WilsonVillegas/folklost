@@ -1,4 +1,10 @@
 ﻿label start:
+    jump startgame
+
+label startgame:
+    if talked_papa: 
+        jump checkStatus
+
     $ talked_papa = False
     $ day_one_start = False
     $ day_two_start = False
@@ -6,11 +12,6 @@
     $ day_one_finish = False
     $ day_two_finish = False
     $ day_three_finish = False
-    jump startgame
-
-label startgame:
-    if talked_papa: 
-        jump checkStatus
     $ talked_papa = True
     #play sound "angusgrunt"
     #$ checkvariable = False
