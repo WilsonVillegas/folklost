@@ -24,18 +24,19 @@ public class ClickAnimationController : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				Debug.Log("Opening");
+				//Debug.Log("Opening");
 				item.animation[animationName].speed = 1;
 				item.animation.Play(animationName);
 				//StartCoroutine(Moment());
 				closed = false;
+				StartCoroutine(Moment());
 			}
 		}
 		else if(!closed)
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				Debug.Log("Closing");
+				//Debug.Log("Closing");
 				item.animation[animationName].speed = -.5f;
 				item.animation.Play(animationName);
 				//StartCoroutine(Moment());
@@ -46,8 +47,11 @@ public class ClickAnimationController : MonoBehaviour
 
 	private IEnumerator Moment()
 	{
-		Debug.Log("Waiting 1");
-		yield return new WaitForSeconds(1);
-		Debug.Log("Waiting 2"); 
+		//Debug.Log("Waiting 1");
+		yield return new WaitForSeconds(.5f);
+		transform.GetChild(0).gameObject.SetActive(true);
+		transform.GetChild(1).gameObject.SetActive(true);
+		transform.GetChild(2).gameObject.SetActive(true);
+		//Debug.Log("Waiting 2"); 
 	}
 }

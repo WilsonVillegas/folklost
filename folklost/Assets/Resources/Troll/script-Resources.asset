@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb16b2f2d9692b46b4c329850ce3c61, type: 3}
+  m_Name: script-Resources
+  m_EditorClassIdentifier: 
+  Title: Resources
+  Lines:
+  - 'label startgame:'
+  - 
+  - '    "What do we have here? A little boy, far from home, cutting down my Silver
+    Tree?"'
+  - '    "I hope you weren''t thinking of taking that wood home with you, boy. It''s
+    mine."'
+  - 
+  - '    menu:'
+  - '        "I''m not scared of you! I cut it down so this wood is mine. Fair is
+    fair."'
+  - '            jump NotScared'
+  - '        "Uh, um, wait! What if I traded you some nice cheese for the wood?"'
+  - '            jump Cheese'
+  - '        "Ahhhhhhhhhhhhhhhhhhh!!!"'
+  - '            jump Scared'
+  - 
+  - 'label NotScared:'
+  - 
+  - '    "You''ve got a lot to learn about the world. Like what a club to the head
+    feels like."'
+  - 
+  - '    jump end'
+  - 
+  - 'label Cheese:'
+  - 
+  - '    "Oh, that does look tasty. I''ll take it. And the wood."'
+  - 
+  - '    jump end'
+  - 
+  - 'label Scared:'
+  - 
+  - '    "Stop screaming already!"'
+  - 
+  - '    jump end'
+  - 
+  - 'label end:'
+  - '    $ cave = True'
+  - '    return'

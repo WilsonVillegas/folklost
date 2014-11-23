@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BasicWood
-  m_Shader: {fileID: 3, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: GoldLight
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,6 +17,13 @@ Material:
         first:
           name: _MainTex
         second:
+          m_Texture: {fileID: 2800000, guid: fc897994d943b63408709405847164dd, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp
+        second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
@@ -24,29 +31,29 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .0188347548
+        second: 1
       data:
         first:
-          name: _BaseLight
-        second: .349999994
+          name: _Outline
+        second: .00499999989
       data:
         first:
-          name: _AO
-        second: 2.4000001
-      data:
-        first:
-          name: _SquashAmount
+          name: _InvFade
         second: 1
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: .392156869, g: .297879875, b: .133794695, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .137254909, g: .0764321461, b: .0764321461, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 0}
       data:
         first:
-          name: _Scale
-        second: {r: 1, g: 1, b: 1, a: 1}
+          name: _OutlineColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb16b2f2d9692b46b4c329850ce3c61, type: 3}
+  m_Name: script-Resources
+  m_EditorClassIdentifier: 
+  Title: Resources
+  Lines:
+  - 'label startgame:'
+  - 
+  - '    "Dinner time little boy."'
+  - '    "You''re lucky."'
+  - "    \"I\u2019m feeling nice today, so I\u2019m gonna give you a chance to escape.
+    A porridge eating contest.\""
+  - "    \"Hope you\u2019re hungry.\""
+  - 
+  - '    menu:'
+  - '        "I don''t think I could eat that much porridge if I had the rest of my
+    life!."'
+  - '            jump RestLife'
+  - '        "I''m a growing boy from a poor family. Of course I''m hungry. Just watch!"'
+  - '            jump JustWatch'
+  - 
+  - 'label RestLife:'
+  - 
+  - '    "Then you''ll lose. And you''ll be my dessert! Hahaha."'
+  - 
+  - '    jump end'
+  - 
+  - 'label JustWatch:'
+  - 
+  - "    \"I like your gusto kid. You\u2019re brave, but stupid. Hahaha.\""
+  - 
+  - '    jump end'
+  - 
+  - 'label end:'
+  - '    return'
