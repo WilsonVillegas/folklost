@@ -1,26 +1,21 @@
 fileFormatVersion: 2
-guid: aa9c539942b9b764a830b1907aefc9da
+guid: 0ff4eeb7d5670a0409e48dd95f3efdf3
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube1
     100004: pCube2
-    100006: polySurface1
-    100008: transform1
-    100010: transform2
     400000: //RootNode
     400002: pCube1
     400004: pCube2
-    400006: polySurface1
-    400008: transform1
-    400010: transform2
-    2300000: polySurface1
-    3300000: polySurface1
-    4300000: polySurface1
-    7400000: Swang
+    2300000: pCube1
+    2300002: pCube2
+    3300000: pCube1
+    3300002: pCube2
+    4300000: pCube1
+    4300002: pCube2
     9500000: //RootNode
-    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,49 +31,11 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Swang
-      takeName: Take 001
-      firstFrame: 1
-      lastFrame: 48
-      wrapMode: 2
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: pCube1
-        weight: 1
-      - path: pCube1/transform2
-        weight: 1
-      - path: pCube2
-        weight: 1
-      - path: pCube2/transform1
-        weight: 1
-      - path: polySurface1
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -110,6 +67,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
