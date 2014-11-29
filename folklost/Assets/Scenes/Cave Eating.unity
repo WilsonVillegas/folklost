@@ -295,64 +295,6 @@ Prefab:
   m_RootGameObject: {fileID: 1481795050}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &228677481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 228677482}
-  - 136: {fileID: 228677484}
-  - 114: {fileID: 228677483}
-  m_Layer: 0
-  m_Name: Dialog
-  m_TagString: dialog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228677482
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228677481}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.188697815, y: -1.36901093, z: 1.43704224}
-  m_LocalScale: {x: 1, y: .735731184, z: 2.16320252}
-  m_Children: []
-  m_Father: {fileID: 955522379}
-  m_RootOrder: 0
---- !u!114 &228677483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228677481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f04831c978c56940af73a3d144c0860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renpyScript: {fileID: 11400000, guid: 4fdd6eba3b5bd59479014ef89761cfa8, type: 2}
-  m_rolloverAudio: {fileID: 8300000, guid: 2e0e7ef9356509246aa1b88512240db5, type: 3}
-  m_selectAudio: {fileID: 8300000, guid: 2e0e7ef9356509246aa1b88512240db5, type: 3}
-  m_selectTexture: {fileID: 2800000, guid: 50036b412f30d5f438f0a65bb4f2975a, type: 3}
-  m_font: {fileID: 12800000, guid: a2824306cdfdb344298f6cc94d8e257c, type: 3}
---- !u!136 &228677484
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228677481}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &245718953
 Prefab:
   m_ObjectHideFlags: 0
@@ -726,6 +668,71 @@ MonoBehaviour:
   restart: {fileID: 2800000, guid: 14ab302c7ce145c4fa17829fc7da3d97, type: 3}
   quit: {fileID: 2800000, guid: 6cb453f7b962940488b27e49dd4f25ad, type: 3}
   m_font: {fileID: 12800000, guid: 2653ef3195b5c9f48b952c25e0cdceca, type: 3}
+--- !u!1 &391549033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 391549036}
+  - 132: {fileID: 391549035}
+  - 114: {fileID: 391549034}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &391549034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391549033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e49248ec3374448b8f90e5d3b61e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_text: {fileID: 391549035}
+  m_blinkTime: .5
+--- !u!132 &391549035
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391549033}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Spacebar to Eat!
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: a2824306cdfdb344298f6cc94d8e257c, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 20
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &391549036
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391549033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &395819317
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +947,7 @@ GameObject:
   - 4: {fileID: 882818643}
   - 33: {fileID: 882818645}
   - 23: {fileID: 882818644}
+  - 114: {fileID: 882818646}
   m_Layer: 0
   m_Name: PorridgeShape
   m_TagString: Untagged
@@ -988,6 +996,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 161585919}
   m_GameObject: {fileID: 882818642}
   m_Mesh: {fileID: 4300002, guid: 98bcaafe839cc5a4bb8505857b7e3c86, type: 3}
+--- !u!114 &882818646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882818642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70d13dae35f42fca5d3736e724dd09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910972000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1144,6 @@ Transform:
   m_LocalPosition: {x: -138.456314, y: 19.0079422, z: -278.067017}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
-  - {fileID: 228677482}
   - {fileID: 1208500210}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1343,7 +1361,6 @@ GameObject:
   - 114: {fileID: 1107417456}
   - 65: {fileID: 1107417463}
   - 82: {fileID: 1107417464}
-  - 114: {fileID: 1107417465}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1474,7 +1491,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1107417454}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 643d4629db1e543f8a6f9087105a930b, type: 3}
   m_PlayOnAwake: 1
@@ -1526,18 +1543,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1107417465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1107417454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 957549679a9de4ed6a51ee5f26b1d125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_scene: Cave Eating
 --- !u!1 &1108048847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1766,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.24168515, z: 2.16320252}
   m_Children: []
   m_Father: {fileID: 955522379}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1249868206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2286,7 @@ GameObject:
   - 4: {fileID: 1521261837}
   - 33: {fileID: 1521261839}
   - 23: {fileID: 1521261838}
+  - 114: {fileID: 1521261840}
   m_Layer: 0
   m_Name: PorridgeShape
   m_TagString: Untagged
@@ -2329,6 +2335,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1525947518}
   m_GameObject: {fileID: 1521261836}
   m_Mesh: {fileID: 4300002, guid: 98bcaafe839cc5a4bb8505857b7e3c86, type: 3}
+--- !u!114 &1521261840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521261836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0600b1cfbd351483a978209115c4e70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1525947518
 Prefab:
   m_ObjectHideFlags: 0

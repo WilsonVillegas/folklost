@@ -24,4 +24,5 @@ label JustWatch:
     jump end
 
 label end:
+    $ dead = True
     return

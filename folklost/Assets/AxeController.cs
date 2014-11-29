@@ -4,6 +4,7 @@ using System.Collections;
 public class AxeController : MonoBehaviour {
 
 	public bool axe = false;
+	public bool gotAxe;
 	public GameObject axemodel;
 
 	// Use this for initialization
@@ -18,17 +19,11 @@ public class AxeController : MonoBehaviour {
 	
 	}
 
-	void AxeOnOff()
-	{
-		axemodel.SetActive(axe);
-	}
-
 	void OnMouseOver()
 	{
-		if(Input.GetMouseButtonDown(0))
-		{
-			axemodel.SetActive(!axe);
-			axe = !axe;
-		}
+		axemodel.SetActive(true);
+		axe = false;
+		gotAxe = true;
+		GetComponent<ItemInteractable> ().Interact ();
 	}
 }

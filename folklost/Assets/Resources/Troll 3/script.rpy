@@ -1,5 +1,4 @@
 ﻿label startgame:
-    $ dead = False
 
     "*I can't eat anymore!*"
 
@@ -30,8 +29,9 @@ label TooMuch:
     jump DeadEnd
 
 label end:
+	$ win = True
     return
 
 label DeadEnd:
-    $ dead = True
+    $ lose = True
     return

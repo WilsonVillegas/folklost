@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f04831c978c56940af73a3d144c0860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renpyScript: {fileID: 11400000, guid: 4fdd6eba3b5bd59479014ef89761cfa8, type: 2}
+  renpyScript: {fileID: 11400000, guid: 8c3fc897aab77aa4b91ab4fb87d70cab, type: 2}
   m_rolloverAudio: {fileID: 8300000, guid: 2e0e7ef9356509246aa1b88512240db5, type: 3}
   m_selectAudio: {fileID: 8300000, guid: 2e0e7ef9356509246aa1b88512240db5, type: 3}
   m_selectTexture: {fileID: 2800000, guid: 50036b412f30d5f438f0a65bb4f2975a, type: 3}
@@ -459,6 +459,10 @@ Prefab:
     - target: {fileID: 400000, guid: b45a9e7a32eec544f92e7bb58877a7f0, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: b45a9e7a32eec544f92e7bb58877a7f0, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b45a9e7a32eec544f92e7bb58877a7f0, type: 3}
@@ -1108,6 +1112,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 955522379}
+  - 114: {fileID: 955522381}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -1129,6 +1134,17 @@ Transform:
   - {fileID: 1208500210}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &955522381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955522378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202e59120365b4d8bb9550795f39ad11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &998710011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,10 +1550,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1107417454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 957549679a9de4ed6a51ee5f26b1d125, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f76820d71e41778328a4f49444826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scene: Cave Eating
 --- !u!1 &1108048847
 GameObject:
   m_ObjectHideFlags: 0

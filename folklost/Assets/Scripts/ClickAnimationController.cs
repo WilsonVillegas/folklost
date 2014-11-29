@@ -48,10 +48,12 @@ public class ClickAnimationController : MonoBehaviour
 	private IEnumerator Moment()
 	{
 		//Debug.Log("Waiting 1");
-		yield return new WaitForSeconds(.5f);
+		yield return new WaitForSeconds(.25f);
 		transform.GetChild(0).gameObject.SetActive(true);
 		transform.GetChild(1).gameObject.SetActive(true);
 		transform.GetChild(2).gameObject.SetActive(true);
+		yield return new WaitForSeconds(2.5f);
+		Application.LoadLevel ("Title");
 		//Debug.Log("Waiting 2"); 
 	}
 }

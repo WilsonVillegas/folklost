@@ -60,7 +60,7 @@ public class PauseMenu : MonoBehaviour {
 		if(GUI.Button(new Rect(110, 150, 180, 40), restart, GUIStyle.none)) {
 			ResumeGame();
 			RenPy.Static.Variables.Clear();
-			Application.LoadLevel ("MainSceneE3");
+			Application.LoadLevel ("Title");
 		}
 		
 		//quit button

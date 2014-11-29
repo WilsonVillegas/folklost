@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+  - enabled: 1
     path: Assets/Scenes/Main.unity
   - enabled: 1
     path: Assets/Scenes/Cave.unity
+  - enabled: 1
+    path: Assets/Scenes/Cave Eating.unity
+  - enabled: 1
+    path: Assets/Scenes/Cave Final.unity
